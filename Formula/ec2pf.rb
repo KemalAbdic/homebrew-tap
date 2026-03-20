@@ -6,12 +6,35 @@ class Ec2pf < Formula
   version "0.0.0"
   license "GPL-3.0-only"
 
-  depends_on :arch => :x86_64
+  on_macos do
+    on_arm do
+      url "https://github.com/KemalAbdic/ec2pf/releases/latest"
+      sha256 ""
+    end
+    on_intel do
+      url "https://github.com/KemalAbdic/ec2pf/releases/latest"
+      sha256 ""
+    end
+  end
 
-  url "https://github.com/KemalAbdic/ec2pf/releases/latest"
-  sha256 ""
+  on_linux do
+    on_arm do
+      url "https://github.com/KemalAbdic/ec2pf/releases/latest"
+      sha256 ""
+    end
+    on_intel do
+      url "https://github.com/KemalAbdic/ec2pf/releases/latest"
+      sha256 ""
+    end
+  end
 
   def install
-    odie "Install ec2pf from a release: brew update && brew install ec2pf"
+    binary = Dir.glob("ec2pf-*").first
+    chmod 0755, binary
+    bin.install binary => "ec2pf"
+  end
+
+  test do
+    assert_match "ec2pf", shell_output("#{bin}/ec2pf --version")
   end
 end
