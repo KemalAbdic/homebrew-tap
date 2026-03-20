@@ -30,6 +30,7 @@ class Ec2pf < Formula
 
   def install
     binary = Dir.glob("ec2pf-*").first
+    odie "ec2pf binary not found in download" if binary.nil?
     chmod 0755, binary
     bin.install binary => "ec2pf"
   end
