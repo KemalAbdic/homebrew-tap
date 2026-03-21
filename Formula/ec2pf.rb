@@ -1,28 +1,28 @@
 class Ec2pf < Formula
   desc "CLI tool for managing AWS SSM port-forwarding sessions to EC2 instances"
   homepage "https://github.com/KemalAbdic/ec2pf"
-  version "1.1.2"
+  version "1.1.3"
   license "GPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.2/ec2pf-1.1.2-darwin-arm64"
-      sha256 "5c48e9d5fbe9a93baeca35b6d86867249f48249f6721c20598a2355c87646908"
+      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.3/ec2pf-1.1.3-darwin-arm64"
+      sha256 "c522a3e08e221e8b90871e41e1b9d2539889658307e7b0de210cc868b0006e48"
     end
     on_intel do
-      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.2/ec2pf-1.1.2-darwin-amd64"
-      sha256 "c8878cb59a9f6ac5180689d23340e156a42937e959f314b529a90989109d2f50"
+      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.3/ec2pf-1.1.3-darwin-amd64"
+      sha256 "547336602b9fc311e15c5d26c4a4215f9ce7fd73c9b577a66b09826ce39014ec"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.2/ec2pf-1.1.2-linux-arm64"
-      sha256 "3b289e2d381b55a36534d92e14e29eafccb2b2194f4e64280135eb5135d0c12a"
+      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.3/ec2pf-1.1.3-linux-arm64"
+      sha256 "8896faee8097d301c6fe47107cd61e638d377bff3e9785e7467e8dd7450039fc"
     end
     on_intel do
-      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.2/ec2pf-1.1.2-linux-amd64"
-      sha256 "ea326695f8f9a2beea2e475f3029f755e9bf14c8db75c8a95f2881e43d26f4e1"
+      url "https://github.com/KemalAbdic/ec2pf/releases/download/v1.1.3/ec2pf-1.1.3-linux-amd64"
+      sha256 "3e4a1ec0a4334c1badca40236372451ad4956c99dac6f2ff6ea52543fb98e87f"
     end
   end
 
